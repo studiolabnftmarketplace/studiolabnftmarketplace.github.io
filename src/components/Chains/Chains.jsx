@@ -12,7 +12,7 @@ const styles = {
     height: "42px",
     fontWeight: "500",
     fontFamily: "Roboto, sans-serif",
-    fontSize: "14px",
+    fontSize: "10px",
     padding: "0 10px",
   },
   button: {

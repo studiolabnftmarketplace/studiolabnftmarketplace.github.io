@@ -69,27 +69,28 @@ const App = ({ isServerInfo }) => {
       <Router>
         <Header style={styles.header}>
           {/* <Logo /> */}
+         
           <SearchCollections setInputValue={setInputValue}/>
           <Menu
             theme="light"
             mode="horizontal"
             style={{
               display: "flex",
-              fontSize: "17px",
+              fontSize: "12px",
               fontWeight: "500",
-              marginLeft: "50px",
+              marginLeft: "0px",
               width: "100%",
             }}
             defaultSelectedKeys={["nftMarketPlace"]}
           >
             <Menu.Item key="nftMarket" onClick={() => setInputValue("explore")} >
-              <NavLink to="/NFTMarketPlace">🛒 Explore Market</NavLink>
+              <NavLink to="/NFTMarketPlace">Explore</NavLink>
             </Menu.Item>
             <Menu.Item key="nft">
-              <NavLink to="/nftBalance">🖼 Your Collection</NavLink>
+              <NavLink to="/nftBalance">Collection</NavLink>
             </Menu.Item>
             <Menu.Item key="transactions">
-              <NavLink to="/Transactions">📑 Your Transactions</NavLink>
+              <NavLink to="/Transactions">Transactions</NavLink>
             </Menu.Item>
           </Menu>
           <div style={styles.headerRight}>

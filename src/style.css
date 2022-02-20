@@ -6,7 +6,7 @@
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
-  border-bottom: 2px solid gold !important;
+  border-bottom: 7px solid gold !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item-selected a,

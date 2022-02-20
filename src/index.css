@@ -32,7 +32,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: white;
+  
 }
+
+
 
 ul[class],
 ol[class] {
@@ -59,4 +62,16 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.ant-card  {
+    margin: auto;
+  }
+
+.ant-card-meta-title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  
 }

@@ -21,7 +21,10 @@ const styles = {
   },
   text: {
     color: "crimson",
+    fontSize: "10px",
   },
+
+  
 };
 
 function Account() {
@@ -33,7 +36,7 @@ function Account() {
     return (
       <div
         style={styles.account}
-        onClick={() => authenticate({ signingMessage: "Hello World!" })}
+        onClick={() => authenticate({ signingMessage: "Authenticate" })}
       >
         <p style={styles.text}>Authenticate</p>
       </div>
