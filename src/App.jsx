@@ -18,6 +18,7 @@ import NativeBalance from "components/NativeBalance";
 import "./style.css";
 import Text from "antd/lib/typography/Text";
 import NFTMarketTransactions from "components/NFTMarketTransactions";
+
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -92,6 +93,7 @@ const App = ({ isServerInfo }) => {
             <Menu.Item key="transactions">
               <NavLink to="/Transactions">Transactions</NavLink>
             </Menu.Item>
+            
           </Menu>
           <div style={styles.headerRight}>
             <Chains />
@@ -99,6 +101,25 @@ const App = ({ isServerInfo }) => {
             <Account />
           </div>
         </Header>
+        <Footer style={{ textAlign: "center", marginTop: "50px" }}>
+        <Text style={{ display: "block", fontWeight: "bold", fontSize: "20px" }}>
+          Studio Lab NFT Marketplace
+        </Text>
+
+        
+
+        <Text style={{ display: "block" }}>
+          Follow Us{" "}
+          <a
+            style={{ color: "black", fontWeight: "bold" }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://instagram.com/studiolabcontent"
+          >
+            @studiolabcontent
+          </a>
+        </Text>
+      </Footer>
         <div style={styles.content}>
           <Switch>
             <Route path="/nftBalance">
@@ -114,9 +135,7 @@ const App = ({ isServerInfo }) => {
           <Redirect to="/NFTMarketPlace" />
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
-        
-      </Footer>
+      
     </Layout>
   );
 };
