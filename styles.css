@@ -11,7 +11,7 @@ nav {
 }
 
 nav:hover {
-  background-color: gold;
+  background-color: goldenrod;
 }
 
 main {
@@ -214,7 +214,7 @@ ul {
 }
 
 #submit:hover {
-  background: gold;
+  background: goldenrod;
   color: white;
 
 }
@@ -229,7 +229,7 @@ button {
 }
 
 button:hover {
-  color: gold;
+  color: goldenrod;
 }
 
 * {box-sizing: border-box}
