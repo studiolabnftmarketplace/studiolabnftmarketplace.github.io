@@ -45,63 +45,67 @@ function SubForm (){
       
     </div>
 
-    <!-- <div class="col-sm-6 text-center">
-      
-      <div id="instructions" class="card text-white bg-light my-5 py-0" style="margin: auto;">
-        <div class="card-body">
-          <a style="text-decoration: none;"><h5 class="text-dark m-0" style="font-weight: bold;">Instructions:</h5></a>
-        </div>
-        <div class="card-footer bg-dark"><a href="#cart" style="text-decoration: none;"><h6 class="text-light m-0" style="font-weight: bold;">1. Add to Cart <br> 2. Press Submit<br> 3. We'll Text You Your ETA</h6></a></div>
-      </div>
-
-    </div> -->
+    
 
   </div>
 
-  <!-- <div class="card text-white my-5 py-1 text-center" style="width: 30%; margin: auto; background-color: black;">
-    <div id="menu" class="card-body">
-      <a href="#menu" style="text-decoration: none;"><h5 class="text-white m-0" style="font-weight: bold;">Menu</h5></a>
-    </div>
-  </div> -->
-
-
-  <!-- <div class="items col-sm-12 text-center" id='items'>
-    
-  </div> -->
+ 
   <br>
 
 
-
-  <!-- <div id="cart" class="col-sm-6 text-center" style="padding-top: 0px; font-size: 12px; color: white; background-color: black; margin: 20px auto 0px auto; width: 100%;">
-    <br>
-    <div id='cart-qty' style="width: 50%; margin: auto;">
-      
-    </div>
-    <ul id='item-list2' style="list-style-type: none; width: 70%; margin: auto;">
-        
-    </ul>
-    <br>
-    <div id='cart-total' style="width: 50%; margin: auto;">
-        
-    </div>
-    <br>
-  </div> -->
-  
-  
   <div style="text-align: center;">
+    <h2 style="font-weight: bold;">NFTs | Magazine | Minting</h2>
+  </div>
+ 
+  
+  
+  <!-- <div style="text-align: center;">
     <button data-toggle="collapse" data-target="#demo" style="box-shadow: 2px 2px 4px black;">NFTs</button>
     <button data-toggle="collapse" data-target="#demo2" style="box-shadow: 2px 2px 4px black;">Magazine</button>
     <button data-toggle="collapse" data-target="#demo3" style="box-shadow: 2px 2px 4px black;">Minting</button>
     
-  </div>
-
-
-  <br>
+  </div> -->
 
   <div style="text-align: center;">
     <button data-toggle="collapse" data-target="#demo" style="box-shadow: 2px 2px 4px black; color: black; background-color: gold;">Donate</button>
     
   </div>
+
+  <div class="slideshow-container" style="margin-top: 30px;">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="resources/images/studiolab.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="beach.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="beach.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+  <br>
+
+  
 
   <br>
 
@@ -141,6 +145,11 @@ function SubForm (){
     <br><br><br>
     
   </div>
+
+  
+
+
+
   <!-- <footer>
     <div class="col-sm-12 text-center" style="width: 100%; margin: 0px auto 0 auto; background-color: black;">
       <br>
@@ -148,5 +157,33 @@ function SubForm (){
     </div>
   </footer> -->
   <script src='scripts.js' type="module"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
