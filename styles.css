@@ -239,9 +239,11 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 200px;
+  max-width: 300px;
   position: relative;
   margin: auto;
+  border: solid black 10px;
+  box-shadow: 2px 2px 8px black;
 }
 
 /* Next & previous buttons */
