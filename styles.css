@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-  background-color: black; width: min-content; border-radius: 10px; margin: 10px;
+  background-color: black; width: min-content; border-radius: 10px; margin: 10px; box-shadow: 2px 2px 8px black;
 }
 
 nav:hover {
