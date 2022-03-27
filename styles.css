@@ -93,7 +93,7 @@ main {
 }
 
 /* Ripple effect */
-button {
+/* button {
   background-position: center;
   transition: background 0.8s;
    border: none;
@@ -111,7 +111,7 @@ button {
 
 button:hover {
   background: black radial-gradient(circle, transparent 1%, silver 1%) center/15000%;
-}
+} */
 
 
 button:active {
@@ -129,28 +129,7 @@ button:active {
   width: 100%;
 }
 
-#submit {
-  background-position: center;
-  transition: background 0.8s;
-   border: none;
-  border-radius: 2px;
-  padding: 8px 12px;
-  font-size: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: white;
-  background-color: limegreen;
-  box-shadow: 0 1px 4px black;
-  outline: none;
-}
-#submit:hover {
-  background: black radial-gradient(circle, transparent 1%, black 1%) center/15000%;
-}
-#submit:active {
-  background-color: black;
-  background-size: 100%;
-  transition: background 0s;
-}
+
 
 
 
@@ -238,6 +217,19 @@ ul {
   background: gold;
   color: white;
 
+}
+
+button {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color:black;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  color: gold;
 }
 
 
