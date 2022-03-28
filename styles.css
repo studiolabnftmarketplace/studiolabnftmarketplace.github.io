@@ -7,11 +7,20 @@ body {
 }
 
 nav {
-  background-color: black; width: min-content; border-radius: 10px; margin: 10px; box-shadow: 2px 2px 8px black;
+  background-color: white; width: min-content; border-radius: 10px; margin: 10px; box-shadow: 2px 2px 8px black;
 }
 
 nav:hover {
   background-color: goldenrod;
+}
+
+#donate {
+  box-shadow: 2px 2px 4px black; color: black; background-color: goldenrod;
+}
+
+#donate:hover {
+  background-color: black;
+  color: gold;
 }
 
 main {
@@ -179,6 +188,7 @@ P {
     -webkit-filter: saturate(200%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: saturate(200%); /* FF 35+ */
     cursor: pointer;
+    box-shadow: 2px 2px 8px gold;
     /* -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
